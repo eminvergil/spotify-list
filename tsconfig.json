@@ -19,7 +19,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/context/albumContext.js"
+    "pages/context/albumContext.js",
+    "pages/components/List.js",
+    "pages/components/GetAlbums.js"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,8 +1,8 @@
 import { createContext, useState } from "react";
 
-export const AlbumContext = createContext();
+export const AlbumContext = createContext([]);
 
-export default function AlbumProvider({ children }) {
+function AlbumProvider({ children }) {
   const [albums, setAlbums] = useState([]);
   return (
     <AlbumContext.Provider value={{ albums, setAlbums }}>
@@ -10,3 +10,5 @@ export default function AlbumProvider({ children }) {
     </AlbumContext.Provider>
   );
 }
+
+export default AlbumProvider;
